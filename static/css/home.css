@@ -1,0 +1,44 @@
+body{
+    background: url("../img/background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+}
+.menu-container {
+    //background-color: ;
+    height: 15vh;
+    border-radius: 5px;
+    margin: 5px 0 0 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    padding-top: 5%;
+
+}
+.container > .menu-container{
+    background: rgba(148, 168, 227, 0.05);
+
+}
+body > .category:first-of-type{
+    padding-top: 15vh;
+}
+.icon-container{
+    width: 50%;
+    height: 30%
+}
+.icon {
+    width: 3em;
+    height: 3em;
+}
+.main.menu.title{
+    padding-top: 1.5vh;
+}
+.menu.title{
+    margin-bottom: 0px;
+}
+body {
+    min-height: 100%
+}
+html {
+    height: 100%
+}

@@ -1,0 +1,209 @@
+.icon {
+    width: 70%;
+    padding-top: 20%;
+
+} /*
+.nav{
+    height: 7.5vh;
+    background-color: rgba(67, 98, 119, 0.1);
+    border-radius: 10px;
+} We'll see if we want to bring back
+*/
+.spacer{
+    width: 100%;
+    height: 100%;
+}
+.row > .seven.columns:first-of-type{
+    height: 100%;
+}
+.logo{
+    font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2.5em;
+    color: whitesmoke;
+    font-weight: 600;
+}
+body{
+    background-image: url("../img/background2.jpg");
+}
+p{
+    text-align: center;
+}
+.note.header{
+    color: whitesmoke;
+    font-size: 3vw;
+    padding-top: 0px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+.note-container{
+    background: rgba(140, 149, 163, .1) ;
+    content: " ";
+    display: block;
+    clear: both;
+    border-radius: 5px;
+    max-height: 70vh;
+}
+hr{
+    margin: 0 0 0 0;
+    /* margin-bottom: 3.5rem; */
+    border-width: 0;
+    border-top: 1px solid #E1E1E1;
+}
+.note-title{
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.hiddenscrollbars::-webkit-scrollbar {
+    display: none;
+}
+#content {
+    height: 60vh;
+    color: black;
+    overflow:scroll;
+}
+.notetextarea{
+    min-height: 60vh;
+    border-color: #e0e0e0;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+    border-width: 1px;
+    border-style: solid;
+    color: #474e57;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    width: 100%;
+}
+textarea:focus, select:focus {
+    border-color: #adadad;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(160, 160, 160, 0.7);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(160, 160, 160, 0.7);
+    outline: none;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #c7c7c7;
+    opacity: 1;
+    font-weight: 400;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #c7c7c7;
+    opacity: 1;
+    font-weight: 400;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #c7c7c7;
+    opacity: 1;
+    font-weight: 400;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #c7c7c7;
+    opacity: 1;
+    font-weight: 400;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #c7c7c7;
+    opacity: 1;
+    font-weight: 400;
+}
+
+
+#search-bg {
+    /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 99;
+
+    /* Pull the background 70px higher to the same place as #bg's */
+    background-position: center -70px;
+
+    -webkit-filter: blur(10px);
+    filter: url('../img/background2.jpg');
+    filter: blur(10px);
+}
+
+#search {
+    /* Put this on top of the blurred layer */
+    position: relative;
+    z-index: 100;
+    padding: 20px;
+    background: rgb(34,34,34); /* for IE */
+    background: rgba(34,34,34,0.75);
+}
+
+@media (max-width: 600px ) {
+    #bg { padding: 10px; }
+    #search-bg { background-position: center -10px; }
+}
+
+
+
+#search-container {
+    position: relative;
+}
+
+
+
+.data-container{
+    background-color: rgba(67, 98, 119, 0.1);
+    border-radius: 10px;
+}
+
+
+.ql-editor{
+
+    min-height: 55vh;
+    max-height: 55vh;
+    background-color: #f8f8f2;
+}
+.selected-note-title{
+    text-align: center;
+    color: deeppink;
+    width: 100%;
+}
+.submit{
+    color: #f8f8f2;
+    margin: 0 0 0 0;
+    background: linear-gradient(60deg, #e91e63, rgba(253, 75, 136, 0.93));
+    box-shadow: 0 12px 20px -10px rgba(244, 67, 54, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(244, 67, 54, 0.2);
+}
+
+td{
+    text-align: center;
+    border-bottom: 1px;
+    border-color: lightgrey
+}
+table{
+    width: 100%;
+}
+.form-header{
+    padding-bottom: 2%;
+    
+}
+th, td {
+    padding: 5px;
+    font-size: x-large;
+    text-align: center;
+    border-bottom: 1px solid #E1E1E1;
+}
+.submit [data-background-color="pink"] {
+  background: linear-gradient(60deg, #e91e63, rgba(253, 75, 136, 0.93));
+  box-shadow: 0 12px 20px -10px rgba(244, 67, 54, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(244, 67, 54, 0.2);
+}
+
+
