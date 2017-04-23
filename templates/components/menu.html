@@ -1,6 +1,6 @@
 
 
-
+{% load staticfiles %}
 
 <div class="sidebar" data-color="purple" data-image="../assets/img/sidebar-1.jpg">
 
@@ -60,12 +60,7 @@
 	                        <p>Notifications</p>
 	                    </a>
 	                </li>
-					<li class="active-pro">
-                        <a href="upgrade.html">
-	                        <i class="material-icons">unarchive</i>
-	                        <p>Upgrade to PRO</p>
-	                    </a>
-                    </li>
+
 	            </ul>
 	    	</div>
-	    <div class="sidebar-background" style="background-image: url(../assets/img/sidebar-1.jpg) "></div></div>
+	    <div class="sidebar-background" style="background-image: url({% static 'assets/img/sidebar-2.jpg' %}) "></div></div>
