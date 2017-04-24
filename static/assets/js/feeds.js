@@ -76,6 +76,9 @@ var makeFeedArray = function (feedlist) {
 
 
 var  populateModal = function (feedArray) {
+    if (localStorage.getItem("rss-feeds") === null){
+        return modalBody + modalCloseTags;
+    }
     var html = "";
     for (var  i = 0; i < feedArray.length; i++ ){
         url = feedArray[i][0];
