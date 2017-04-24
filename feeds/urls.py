@@ -5,7 +5,8 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    url(r'^api/speedtest', views.get_ethernet_speed, name='get_ethernet_speed')
+    url(r'^api/speedtest$', views.get_ethernet_speed, name='get_ethernet_speed'),
+    url(r'^feeds$', views.feeds, name='feeds'),
   #  url(r'^bucketlists/$', CreateView.as_view(), name="create"),
   #  url(r'^bucketlists/(?P<slug>[\w.@+-]+)/',
   #      DetailsView.as_view(), name="details"),

@@ -28,6 +28,11 @@ def index(request):
     return render(request, 'feeds/dashboard.html', context)
 
 
+def feeds(request):
+    context = {}
+    return render(request, 'apps/feeds.html', context)
+
+
 @ajax_request
 def get_ethernet_speed(request):
     context = {}
